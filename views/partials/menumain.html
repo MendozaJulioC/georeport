@@ -1,0 +1,101 @@
+
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+ <div class="navbar-fixed">
+    <nav class=" blue-grey ">
+        <a href="#" class="brand-logo center">  <img src="https://www.medellin.gov.co/irj/go/km/docs/etc/PortalMedellin/images/medellin.png" alt="" class="responsive-img" height="100" width="100"></a>
+    </nav>
+</div>
+
+          
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red sidenav-trigger" data-target="menu-side">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating light-blue darken-4"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating light-green darken-4" href="/desagregacion" ><i class="material-icons">people</i></a></li>
+      <li><a class="btn-floating teal darken-1" href="/georref"><i class="material-icons">add_location</i></a></li>
+      <li><a class="btn-floating blue" href="/"> <i class="material-icons circle    orange accent-3">home</i></a>   </li>
+   
+    </ul>
+  </div>
+
+
+ <div class="container section">
+<!-- 
+    <a href="" class="sidenav-trigger brad-logo center" data-target="menu-side">
+       <i class="material-icons medium   ">menu</i>
+    </a>
+-->  
+
+   <ul  style=" width: 450px; display: inline-block;" class="sidenav collection" id="menu-side">
+       <li>
+           <div class="user-view">
+               <div class="background">
+                   <img src="https://www.medellin.gov.co/irj/go/km/docs/galerias/Imagenes/Galer%C3%ADa%20d%C3%ADa%20a%20d%C3%ADa%202020/20200717_BeneficiosPosgrados1.jpg" alt="" height="450" width="450">
+               </div>
+               <a href="">
+                <img src="https://www.medellin.gov.co/irj/go/km/docs/etc/PortalMedellin/images/medellin.png" alt="" class="responsive-img" height="300" width="310">
+               </a>
+               <a href="">
+                 <h1 class="name white-text darken-4" style="font-size:20px;"> Julio César Mendoza    <span class="email white-text darken-4"style="font-size:14px;">juliomendoza.medellin@gmail.com</span></h1>   
+               </a>
+          
+           </div>
+       </li>
+       <li class="collection-item avatar">
+            <a href="/">
+                 <i class="material-icons circle    orange accent-3">home</i>
+                <span class="title"> Home</span> 
+            </a>
+       </li>
+       
+       <li class="collection-item avatar">
+            <a href="/georref">
+            <i class="material-icons circle  red darken-3">add_location</i>
+            <span class="title"> Proyectos georreferenciados </span> 
+        </a>
+        </li>
+       <li class="collection-item avatar">
+            <a href="">
+                <i class="material-icons circle  blue-grey l">pageview</i>
+                <span class="title"> Dependencias georreferenciados </span> 
+            </a>
+        </li>
+       
+  
+        <li class="collection-item avatar">
+            <a href="">
+                <i class="material-icons circle blue-grey">my_location</i>
+                <span class="title"> Consulta Territorio </span> 
+            </a>
+        </li>
+
+
+        <li class="collection-item avatar">
+            <a href="">
+                <i class="material-icons circle blue-grey">people</i>
+                <span class="title"> Desagregación Poblacional </span> 
+            </a>
+        </li>
+    </ul>
+
+
+</div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems);
+</script>
