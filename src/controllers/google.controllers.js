@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 
-let googlesheet =  require('../spreadsheet');
+let googlesheet =  require('../config/spreadsheet');
 
 const obternerVideos = async (req, res)=>{
     try {

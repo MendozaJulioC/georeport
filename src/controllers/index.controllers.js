@@ -2,6 +2,16 @@
 const express = require('express');
 const app = express();
 
+
+const getHome= async(req, res)=>{
+    try {
+        res.render('./home/index.html', {
+            title: "Bienvenido"
+        })
+    } catch (error) {
+    }
+}
+
 const getdesagregacion = async(req, res)=>{
 
     try {
@@ -19,7 +29,7 @@ const getdesagregacion = async(req, res)=>{
   const getGeorref = async(req, res)=>{
   
       try {
-          res.render('georref.html', {
+          res.render('./geo/georref.html', {
               title: "Georreferenciación"
           })
       } catch (e) {
@@ -32,6 +42,6 @@ const getdesagregacion = async(req, res)=>{
 
 module.exports = { 
 
-    getdesagregacion: getdesagregacion,
-    getGeorref      : getGeorref
+  
+    getHome , getGeorref
 }

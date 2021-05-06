@@ -1,6 +1,7 @@
 const { GoogleSpreadsheet} = require('google-spreadsheet');
-const credenciales = require('./keys/credenciales.json');
-let googleId = "1BAxDSHZq34ETyfKQC1Bdo4QDrabJjX1buoWnYs89q1o";
+const credenciales = require('../keys/appReportAcivitykeys.json');
+let googleId = process.env.ikeypass;
+
 
 async function accederGooogleSheet(){
     const documento = new GoogleSpreadsheet(googleId);

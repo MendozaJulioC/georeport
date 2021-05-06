@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html>
+    <%- include ('../partials/head.html') %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style> #container {padding-left: 80px;padding-right: 60px;padding-top: 5px;padding-bottom: 2px;}
+        .swal-text {background-color: #d8e3e7;padding: 17px;border: 1px solid #d8e3e7;display: block;margin: 22px;text-align: center;color: #126e82;}
+    </style>
+    <body id="container">
+        <!-- Navbar goes here -->
+        <%- include ('../partials/menumain.html') %>
+        <!-- Page Layout here -->
+        <section class="shadow-lg p-3 mb-4 bg-white rounded">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-12 row justify-content-center align-items-center minh-100">
+                        <img src="https://www.medellin.gov.co/irj/go/km/docs/etc/PortalMedellin/images/medellin.png"   height="200" width="300" >
+                    </div>  
+                </div>
+                <div class="col-sm-12">
+                    <h5 class="card-title" style="text-align: center;font-size: 38px;line-height: 20px;font-weight: 150;color: #28527a;
+                        font-family: 'Helvetica Neue', Roboto, Arial, 'Droid Sans', sans-serif;">Registro Inversión Pública
+                    </h5>
+                    <h5 class="card-title" style="text-align: center;font-size: 18px;line-height: 20px;font-weight: 150;color: #28527a;
+                    font-family: 'Helvetica Neue', Roboto, Arial, 'Droid Sans', sans-serif;">Subdirección Prospectiva, Información y Evaluación Estratégica
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <section class="shadow-lg p-3 mb-4 bg-white rounded">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 style="text-align: left;font-size: 50px;line-height: 20px;font-weight: 20px;color:rgb(28, 55, 85);
+                        font-family: 'Helvetica Neue', Roboto, Arial, 'Droid Sans', sans-serif;"> Departamento Administrativo de Planeación Municipal 
+                    </h2>
+                    <h2  style="text-align: left;font-size: 20px;line-height: 20px;font-weight: 180;color:rgb(28, 55, 85);
+                        font-family: 'Helvetica Neue', Roboto, Arial, 'Droid Sans', sans-serif;"> Marzo-31-2020
+                    </h5>
+                    <hr> <br>
+                </div>
+            </div>
+            <div class="col-sm-12" style=" border: 4px outset gray;">
+                <table id="query_table" class="table table-striped table-bordered table-sm " style="font-size: small;" width="100%"></table>
+            </div>
+        </section>
+
+        <section class="shadow-lg p-3 mb-4 bg-white rounded">
+        </section>
+          
+    </div>
+    </body>
+  </html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/js/dateo.js"></script>
+  
